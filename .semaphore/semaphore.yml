@@ -8,10 +8,16 @@ blocks:
   - name: Test
     task:
       jobs:
-        - name: install
+        - name: npm install
           commands:
             - checkout
             - sem-version node 12
             - cache restore
             - npm install
             - cache store
+  - name: Tests
+    task:
+      jobs:
+        - name: jest
+          commands:
+            - npm test
