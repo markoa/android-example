@@ -24,14 +24,3 @@ blocks:
             - sleep 15
     dependencies:
       - Install dependencies
-  - name: Static analysis
-    dependencies:
-      - Install dependencies
-    task:
-      prologue:
-        commands:
-          - checkout
-      jobs:
-        - name: Linting
-          commands:
-            - npm lint
