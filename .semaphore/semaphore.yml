@@ -5,7 +5,7 @@ agent:
     type: e1-standard-2
     os_image: ubuntu1804
 blocks:
-  - name: Test
+  - name: Install dependencies
     task:
       jobs:
         - name: npm install
@@ -15,9 +15,9 @@ blocks:
             - cache restore
             - npm install
             - cache store
-  - name: Tests
+  - name: Run tests
     task:
       jobs:
         - name: jest
           commands:
-            - npm test
+            - sleep 15
