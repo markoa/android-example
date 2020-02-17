@@ -1,0 +1,25 @@
+{
+  "name": "android-example",
+  "version": "1.0.0",
+  "description": "Just testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markoa/android-example.git"
+  },
+  "keywords": [
+    "demo"
+  ],
+  "author": "markoa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/markoa/android-example/issues"
+  },
+  "homepage": "https://github.com/markoa/android-example#readme",
+  "devDependencies": {
+    "jest": "^25.1.0"
+  }
+}
