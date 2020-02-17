@@ -24,3 +24,14 @@ blocks:
             - sleep 15
     dependencies:
       - Install dependencies
+  - name: Static analysis
+    dependencies:
+      - Install dependencies
+    task:
+      jobs:
+        - name: lint
+          commands:
+            - npm lint
+promotions:
+  - name: Deploy
+    pipeline_file: pipeline_2.yml
